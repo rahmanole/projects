@@ -294,3 +294,32 @@
   width: 25px;
 
 }
+
+
+/* css for about page */
+.about{
+  padding: 50px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+/* css for contact */
+
+.contact{
+  padding: 35px;
+}
+
+.contact input{
+  padding: 10px;
+  width: 205px;
+  margin-bottom: 18px;
+  border: 1px solid #CCDB28;
+  border-radius: 4px;
+}
+
+.contact textarea{
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #CCDB28;
+  border-radius: 4px;
+}
