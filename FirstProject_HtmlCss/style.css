@@ -2,7 +2,7 @@
 
 .main{
   width:80%;
-  height: 1650px;
+  height: 1750px;
   margin:0 auto;
 }
 .hdrSlidr{
@@ -133,9 +133,8 @@
 }
 
 .moto{
-  position: relative;
-  left: 65%;
-  top: 100px;
+  float: right;
+  margin: 90px 50px 0px 0;
 }
 
 .moto p{
@@ -145,48 +144,153 @@
 .mainBody{
   height:800px;
   width:100%;
+  margin:18px 0px;
 
 }
 .content{
-  width: 80%;
+  width: 70%;
   background: white;
   border-right: 4px solid #f2f2f2;
+  height: 800px;
+  float: left;
 
 }
 
 .rightSideBar{
-  border-left: 2px solid black;
+  width: 29%;
+  float: left;
+}
+
+.category{
+  padding: 10px 0px 0px 25px;
+}
+
+.category h1{
+  display: block;
+  text-decoration: none;
+  padding: 5px 25px;
+  border: 1px solid #CCDB28;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  color: black;
+  background: #f2f2f2;
+  width: 28%;
+}
+
+.category a{
+  display: block;
+  text-decoration: none;
+  padding: 5px 25px;
+  border: 1px solid #CCDB28;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  color: black;
+  width: 50%;
+  background: #f2f2f2;
+}
+
+.category a:hover{
+  display: block;
+  text-decoration: none;
+  padding: 5px 25px;
+  border: 1px solid #CCDB28;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  color: black;
+  width: 50%;
+  background: #CCDB28;
 }
 
 .belowBody{
   width: 100%;
   height:200px;
   background:
-  border: 10px solid #3F4040;
   border-radius: 5px
 }
 .blwBdy1{
-  width: 32.%;
+  width: 32.93%;
   height: 100%;
   float: left;
-  background:
+  border: solid 2px #;
+  margin-right: 5px;
+  border-radius: 7px;
+  background: #f2f2f2;
 }
 
+.blwBdy1 p{
+  padding: 25px;
+  font-size: 20px;
+}
 .blwBdy2{
   width: 32.33%;
   height: 100%;
   float: left;
+  border: solid 2px #;
+  margin-right: 5px;
+  border-radius: 7px;
   background: #f2f2f2;
 }
 
 .blwBdy3{
-  width: 32.33%;
-  height: 200px;
-  float: right;
-  background:
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  border: solid 2px #;
+  margin-right: 5px;
+  border-radius: 7px;
+  background: #f2f2f2;
 }
 
 
 .footer{
+  width: 100%;
+  height:50px;
+  background: #262011;
+  margin-top:10px
+}
+.footer1{
+  width:25%;
+  float:left;
+  height:50px;
+  border-right: 2px solid white;
+}
+.footer1 p{
+  text-align: center;
+  color: white;
+}
+.footer2{
+  width:50%;
+  float:left;
+  height:50px;
+  border-right: 2px solid white;
+}
+.footer2 p{
+  text-align: center;
+  color: white;
+}
+.footer3{
+  width:24%;
+  float:left;
+  height:50px;
+}
+
+.footer3 p{
+  color:white;
+}
+
+.footer3 a{
+  padding: 10px 37px;
+  background: #262213;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin: 4px auto;
+  display: block;
+  width: 25px;
 
 }
