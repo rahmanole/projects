@@ -280,6 +280,21 @@
 .footer3 p{
   color:white;
 }
+<<<<<<< HEAD
+=======
+
+.footer3 a{
+  padding: 10px 37px;
+  background: #262213;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin: 4px auto;
+  display: block;
+  width: 25px;
+>>>>>>> e190ad06f4eb593562d8226ac4e52f4ec3e597f4
 
 .footer3 a{
   padding: 10px 37px;
