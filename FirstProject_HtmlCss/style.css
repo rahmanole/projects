@@ -32,37 +32,61 @@
   height:100%;
   float: left;
 }
-
-.srcBar{
-  height: 0px;
-  width:50%;
-  float:right;
-  margin-top: 35px;
-  right:0px;
-  top:0px;
-
+.sign{
+	position: absolute;
+	right: 140px;
+	top: 22px;
 }
 
-.src{
-  width: 50%;
-  padding: 10px 24px;
-  border: 1px solid #B5BD00;
+.sign a{
+	width: 205px;
+	margin-bottom: 18px;
+	border: 1px solid #CCDB28;
+	border-radius: 4px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+
+.sign a:hover{
+	background:#B5AB00;
+}
+
+.srcBar{
+	position: absolute;
+	right: 140px;
+	top: 70px;
+	width: 350px;
+}
+
+.srcBar input[type=text]{
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 18px;
+  border: 1px solid #CCDB28;
   border-radius: 4px;
-  float: right;
+}
+
+.srcBar input[type=submit]{
+	padding: 10px;
+	width: 114px;
+	margin-bottom: 18px;
+	border: 1px solid #CCDB28;
+	border-radius: 4px;
+	cursor: pointer;
+	background: white;
+}
+
+.srcBar input[type=submit]:hover{
+	background:#B5AB00;
 }
 
 .src:focus{
-  border:2px solid #B5BD00;
+  border:1px solid #f2f2f2;
 }
 .btn{
-  width: 30%;
-  padding: 10px 20px;
-  border: 1px solid #B5BD00;
-  border-radius: 4px;
-  margin-left: 5px;
-  cursor: pointer;
-  float: right;
-  background:white;
+
 }
 .btn:hover{
   background: #B5BD00;
@@ -280,21 +304,9 @@
 .footer3 p{
   color:white;
 }
-<<<<<<< HEAD
-=======
 
-.footer3 a{
-  padding: 10px 37px;
-  background: #262213;
-  border: 1px solid #f2f2f2;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-  margin: 4px auto;
-  display: block;
-  width: 25px;
->>>>>>> e190ad06f4eb593562d8226ac4e52f4ec3e597f4
+
+
 
 .footer3 a{
   padding: 10px 37px;
@@ -311,25 +323,42 @@
 }
 
 
-/* css for about page */
 .about{
   padding: 50px;
   font-size: 22px;
   text-align: justify;
 }
 
-/* css for contact */
+
 
 .contact{
   padding: 35px;
+  color:green;
 }
 
-.contact input{
+.contact input[type=text]{
   padding: 10px;
   width: 205px;
   margin-bottom: 18px;
   border: 1px solid #CCDB28;
   border-radius: 4px;
+}
+
+.contact input[type=text]:hover{
+	outline:#f2f2f2;
+}
+
+.contact input[type=submit]{
+  padding: 10px;
+  width: 205px;
+  margin-bottom: 18px;
+  border: 1px solid #CCDB28;
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+.contact input[type=submit]:hover{
+background:#B5B100
 }
 
 .contact textarea{
@@ -338,3 +367,38 @@
   border: 1px solid #CCDB28;
   border-radius: 4px;
 }
+
+
+
+/* css for registration page*/
+.reg{
+	width:70%;
+	margin:0 auto;
+}
+
+.reg input[type=text]{
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 18px;
+  border: 1px solid #CCDB28;
+  border-radius: 4px;
+}
+
+.reg input[type=submit]{
+  padding: 10px;
+  width: 205px;
+  margin-bottom: 18px;
+  border: 1px solid #CCDB28;
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
