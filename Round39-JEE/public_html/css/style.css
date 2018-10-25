@@ -1,0 +1,78 @@
+@font-face{
+    src:url("../webfonts/Tinos-Regular.ttf");
+    font-family: tinos;
+}
+body{
+ background-image:url("../img/body-bg3.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 800px, cover;
+    background-attachment:fixed;
+     
+    
+}
+.mainContainer{
+    background: #f2f2f2;
+    opacity:0.9;
+}
+
+.mainDiv{
+   width: 80%;
+margin: 0 auto;
+}
+
+.profileOwner{
+    padding-top: 50px;
+}
+
+.profileOwner h4{
+}
+.hrBar{
+   height: 20px;
+width: 75%;
+background: white;
+border-radius: 0 50px 50px 0;
+}
+
+.dark-overlay{
+    background-color:rgba(0,0,0,0.7);
+    min-height: 700px
+}
+
+
+.profile img{
+    width: 100px;
+height: 100px;
+}
+.profile:hover{
+   box-shadow: 0px 3px 4px rgba(0,0,0,.35);
+}
+
+.profile:hover img{
+   box-shadow: 0px 2px 3px white;
+}
+.profile h5{
+    color:white;
+    font-size: 20px;
+    font-family: tinos;
+   
+}
+
+.profile p{
+    color:white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.profile a:link{
+    text-decoration: none;
+    font-family: tinos;
+}
+
+.profile a{
+   margin-right: 10px;
+   color:white;
+}
+
+.footer{
+    height:50px;
+}
