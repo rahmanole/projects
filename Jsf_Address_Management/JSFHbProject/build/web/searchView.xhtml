@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <!-- Adding BootStrap -->
+        <link rel="stylesheet" href="bootstrap.css" />        
+        <link rel="stylesheet" href="custom.css" />        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--        <link href="css/cutom.css" rel="stylesheet" type="text/css"/>-->
+    </h:head>
+    <h:body>
+        <div class="container mainBody">
+            <div class="row">
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-4">
+                    <p:dataTable id="datatable" var="p" value="#{personController.persons}">
+                        <div class="card-body">
+                            <p:column headerText="Name">
+                                <p:outputLabel id="Name" value="${p.name}" />
+                            </p:column>
+                            <p:column headerText="Email">
+                                <p:outputLabel id="pEmail" value="${p.email}" />
+                            </p:column>
+                        </div>
+                    </p:dataTable>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <a href="/JSFHbProject">Home</a>
+            <p:dataTable id="datatable" var="p" value="#{personController.persons}">
+
+                <p:column headerText="Person ID">
+                    <p:outputLabel id="PID" value="#{p.id}" />
+                </p:column>
+                <p:column headerText="Name">
+                    <p:outputLabel id="Name" value="${p.name}" />
+                </p:column>
+                <p:column headerText="City">
+                    <p:outputLabel id="city" value="${p.city}" />
+                </p:column>
+                <p:column headerText="Home Tel">
+                    <p:outputLabel id="pAddress" value="#{p.homeTel}" />
+                </p:column>
+                <p:column headerText="Office Tel">
+                    <p:outputLabel id="officeTel" value="${p.officeTel}" />
+                </p:column>
+                <p:column headerText="Email">
+                    <p:outputLabel id="pEmail" value="${p.email}" />
+                </p:column>
+                <p:column headerText="City">
+                    <p:outputLabel id="pCity" value="${p.city}" />
+                </p:column>
+                <p:column headerText="Home address">
+                    <p:outputLabel id="pHomeAdd" value="${p.homeAddress}" />
+                </p:column>
+                <p:column headerText="Office Address">
+                    <p:outputLabel id="pOfficeAdd" value="${p.officeAddress}" />
+                </p:column>
+                <p:column headerText="actions">
+                    <p:commandButton id="delbtn" value="delete" class="btn bg-primary" action="${addressBean.DeletFun(p.personID)}" />
+                </p:column>
+
+            </p:dataTable>
+        </div>
+    </h:body>
+</html>
+
