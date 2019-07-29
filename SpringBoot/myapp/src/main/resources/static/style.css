@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2019, 2:43:51 AM
+    Author     : HP
+*/
+
+.mainBody{
+    background: #8DD35F;
+    padding-top: 13px;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.ftrImg{
+    border-radius: 4px;
+}
+.custom-card-body{
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.catName{
+    background: white;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.catName p{
+    margin: 0px;
+    margin-left: 0px;
+    padding: 5px 0 5px 0;
+    margin-left: -7px;
+}
+
+.oneCat{
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .postCard{
+        padding: 10px;
+        margin-bottom: 6px;
+    }
+    .headLine{
+        height: 78%;
+    }
+    .ftrImg{
+        height: 92px;
+    }
+    .publisherLogo{
+        height: 20px;
+        float: right;
+    }
+    .time{
+        font-size: 13px;
+        float: right;
+    }
+    .postInfo{
+
+    }
+
+    .headLineAndPostInfo{
+
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .postCard{
+        padding: 10px;
+        margin-bottom: 6px;
+    }
+    .ftrImg{
+        height: 66px;
+    }
+    .headLine{
+        height: 81%;
+        font-size: 14px;
+    }
+
+    .publisherLogo{
+        height: 14px;
+        float: right;
+    }
+    .time{
+        font-size: 11px;
+        float: right;
+    }
+}
