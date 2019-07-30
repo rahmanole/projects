@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 offset-lg-3">
+                    <form th:object="${user}" th:action="@{/save}" th:method="post">
+                        <div class="form-group">
+                            <label for="name">Id</label>
+                            <input type="text" class="form-control" th:field="*{id}">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" th:field="*{name}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input type="text" class="form-control" th:field="*{email}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Age</label>
+                            <input type="text" class="form-control" th:field="*{age}">
+                        </div>
+                        
+                        <div class="form-check">
+                            <label for="name">
+                                <input type="radio" class="form-check-input" th:value="male" th:field="*{gender}">Male
+                            </label>     
+                        </div>
+                        <div class="form-check">
+                            <label for="name">
+                                <input type="radio" class="form-check-input" th:value="female" th:field="*{gender}">Female
+                            </label>      
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Select Round:</label>
+                            <select th:field="*{round}" class="form-control">
+                                <option th:value="round-39">Round-39</option>
+                                <option th:value="round-40">Round-40</option>
+                                <option th:value="round-41">Round-40</option>
+                                <option th:value="round-42">Round-40</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Password:</label>
+                            <input type="text" class="form-control" th:field="*{password}">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
